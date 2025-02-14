@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Lounge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="resources/CoffeeFavicon.jpeg">
+    <style>
+
+        html {
+            scroll-behavior: smooth; /* Optional for built-in smooth effect */
+        }
+
+        body {
+            font-family: 'Ovo', serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        .navbar {
+            display: flex;
+            justify-content: center;  
+            align-items: center;  
+            height: 60px; 
+            background-color: #333;
+            width: 100vw;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px; 
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .navbar summary {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            margin-top: 5px;
+        }
+        
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            color: #fff;
+            background-color: #4d4c4c;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            color: #333;
+            /* font-family: Parisienne; */
+            text-shadow: 1px 1px 1px #fff;
+            justify-self: center;
+            text-decoration: underline;
+        }
+        
+        .container {
+            display: flex;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        .info {
+            background-color: #4d4c4c;
+            color: #d3d3d3;
+            padding: 20px;
+            width: 50%;
+        }
+
+        .info img {
+            width: 40%;
+        }
+
+        .info a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        .image {
+            width: 50%;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .image img:hover {
+            transform: scale(1.10);
+        }
+        
+        
+
+        /* Carousel */
+        @keyframes slide {
+            0%, 100% { transform: translateX(0%); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+        }
+
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 99%;
+            border-radius: 10px;
+        }
+
+        .carousel img {
+            width: 200px;
+            flex-shrink: 0;
+            animation: slide 9s infinite ease-in-out;
+            max-height: 133px;
+        
+        }
+
+        .restaurant-list {
+            display: flex;
+            justify-content: space-around;
+            max-width: 900px;
+            width: 90%;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .restaurant-card {
+            width: 50%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color:#333;
+        }
+
+        .restaurant-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            background-color: whitesmoke;
+            border-radius: 10px;
+            line-height: 35px;
+            padding: 10px;
+            text-align: left;
+
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            .restaurant-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .restaurant-card {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Contact">Contact</a>
+            <a href="#location">Location</a>
+            <details>
+                <summary>➕ Expand to see more</summary>
+                <p style="background-color: #333; padding: 10px; line-height: 1.5;">
+                    <a href="RetroCafe">Retro Cafe</a>
+                <br>
+                    <a href="SouthEdgeCafe.html">South Edge Cafe</a>
+                </p>
+            </details>
+        </nav>
+    </header>
+    
+        <h1>Coffee Lounge</h1>
+        
+        <div class="container">
+            <div class="info">
+                <h2 style="justify-self: left">Contact</h2>
+                <p>Phone: 0349 7883087</p>
+                <h2 style="justify-self: left">Google Rating</h2>
+                <img src="resources/stars_image.png" alt="4.1 Stars">
+                <p>Click <a href="https://www.google.com/search?q=coffee+lounge&rlz=1C5GCEM_en&oq=coffee+lounge&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIQCAEQLhjHARixAxjRAxiABDIKCAIQABixAxiABDIKCAMQLhixAxiABDIKCAQQABixAxiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABNIBCDI2MTRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8&sei=AlSuZ4DyL8GJ7NYPu-fy4As#lrd=0x38df975378f9bbc5:0xd7b46fa8d0507a94,1,,,," target="_blank">here</a> to see Google Ratings</p>
+            </div>
+            <div class="image">
+                <img src="resources/coffee_lounge_pic1.jpeg" alt="Coffee Lounge Image">
+            </div>
+        </div>
+    
+    
+        <div class="restaurant-list">
+            <div class="restaurant-card">
+                <a href="resources/CoffeeMenu.jpeg" target="_blank">
+                    <img src="resources/CoffeeMenu.jpeg" alt="Restaurant Image" style="width: 100%">
+                </a>
+                <h2>Menu</h2>
+            </div>
+            <div class="restaurant-card">
+                <form>
+                    <h2>Order</h2>
+                    <label for="item">Item:</label>
+                    <select name="item" id="item" required>
+                        <option value="" hidden >What to Eat?</option>
+                        <option value="Regular Fries">Regular Fries</option>
+                        <option value="Zinger Burger">Zinger Burger</option>
+                        <option value="Fettuccine pasta">Fettuccine pasta</option>
+                        <option value="Chicken Roll Paratha">Chicken Roll Paratha</option>
+                        <option value="Club sandwich">Club sandwich</option>
+                        <option value="Lacha Paratha">Lacha Paratha</option>
+                        <option value="Omlette">Omlette</option>
+                        <option value="Mushroom Omlette">Mushroom Omlette</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Chicken Chilli Dry">Chicken Chilli Dry</option>
+                    </select>
+                    <br>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+                    <br>
+                    <label for="mode">Mode of Delivery:</label>
+                    <br>
+                    <label for="mode">Jazz Cash</label>
+                    <input type="radio" name="mode" id="delivery" value="Jazz Cash"> 
+                    <label for="mode">Cash on Delivery</label>
+                    <input type="radio" name="mode" id="delivery" value="Cash on Delivery"> 
+                    <label for="mode">Debit Card</label>
+                    <input type="radio" name="mode" id="delivery" value="Debit Card">
+                    <br>
+                    <label for="contact">Contact Number:</label> 
+                    <br>
+                    <input type="tel" name="contact" id="contact" placeholder="03xx-xxxxxxx" required>
+                    <br>
+                    <input type="submit" value="Order">
+                </form>
+            </div>
+            
+        </div>
+
+        <section class="restaurant-list" id="location">
+            <div class="restaurant-card">
+                <canvas id="canvas" width="30" height="30" style="background: linear-gradient(45deg, yellow 10%, red 70%); border-radius: 100%"></canvas>
+                <h2 style="display: inline">Location</h2>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15103.905009567376!2d72.98113651227646!3d33.64332067517196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df975378f9bbc5%3A0xd7b46fa8d0507a94!2sCoffee%20Lounge!5e0!3m2!1sen!2s!4v1739491236788!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+    <footer>
+        <div class="carousel" >
+            <img src="resources/item1.jpg" alt="Coffee Image 1">
+            <img src="resources/item2.jpg" alt="Coffee Image 2">
+            <img src="resources/item3.jpg" alt="Coffee Image 3">
+            <img src="resources/item4.jpg" alt="Coffee Image 4">
+            <img src="resources/item5.jpg" alt="Coffee Image 5">
+            <img src="resources/item6.jpeg" alt="Coffee Image 6">
+            <img src="resources/item7.jpg" alt="Coffee Image 7">
+            <img src="resources/item8.jpeg" alt="Coffee Image 8">
+            <img src="resources/Unknown-1.jpeg" alt="Coffee Image 8">
+            <img src="resources/RetroMenu.jpg" alt="Coffee Image 8">
+        </div>
+    </footer>
+</body>
+</html>
