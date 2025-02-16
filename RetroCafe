@@ -204,7 +204,7 @@
     <header>
         <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="restaurant_card.html">Contact</a>
+            <a href="contact.html">Contact</a>
             <a href="#location">Location</a>
             <details>
                 <summary>➕ Expand to see more</summary>
