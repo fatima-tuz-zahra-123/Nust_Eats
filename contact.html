@@ -1,121 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Contact Us</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Parisienne&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-        body {
-            font-family: "Ovo", serif;
-            background-color: #2c2c2c; /* Dark grey */
-            color: #f5f5dc; /* Creme */
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #3c3c3c; /* Slightly lighter dark grey */
-            padding: 50px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 40px;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: "Parisienne", cursive;
-            text-align: center;
-            color: #f5f5dc; /* Creme */
-        }
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 0 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 2px solid #f5f5dc; /* Creme */
-            border-radius: 15px;
-            background-color: #3c3c3c; /* Slightly lighter dark grey */
-            color: #f5f5dc; /* Creme */
-        }
-        nav ul li a:hover {
-            background-color: #4c4c4c; /* Slightly darker grey */
-            color: #f5f5dc; /* Creme */ /* Ensure the color remains the same */
-        }
-        main {
-            margin: 40px;
-        }
-        form {
-            background-color: #3c3c3c; /* Slightly lighter dark grey */
-            padding: 40px;
-            border-radius: 10px;
-            margin: 40px auto;
-            max-width: 600px;
-        }
-        label {
-            display: block;
-            margin-bottom: 10px;
-            color: #f5f5dc; /* Creme */
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #f5f5dc; /* Creme */
-            border-radius: 5px;
-            background-color: #2c2c2c; /* Dark grey */
-            color: #f5f5dc; /* Creme */
-        }
-        button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4c4c4c; /* Slightly darker grey */
-            color: #f5f5dc; /* Creme */
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #5c5c5c; /* Even darker grey */
-        }
-        
+      body {
+        font-family: "Ovo", serif;
+        background-color: #2c2c2c; /* Dark grey */
+        color: #f5f5dc; /* Creme */
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #3c3c3c; /* Slightly lighter dark grey */
+        padding: 50px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 40px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Parisienne", cursive;
+        text-align: center;
+        color: #f5f5dc; /* Creme */
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border: 2px solid #f5f5dc; /* Creme */
+        border-radius: 15px;
+        background-color: #3c3c3c; /* Slightly lighter dark grey */
+        color: #f5f5dc; /* Creme */
+      }
+      nav ul li a:hover {
+        background-color: #4c4c4c; /* Slightly darker grey */
+        color: #f5f5dc; /* Creme */ /* Ensure the color remains the same */
+      }
+      main {
+        margin: 40px;
+      }
+      form {
+        background-color: #3c3c3c; /* Slightly lighter dark grey */
+        padding: 40px;
+        border-radius: 10px;
+        margin: 40px auto;
+        max-width: 600px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #f5f5dc; /* Creme */
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #f5f5dc; /* Creme */
+        border-radius: 5px;
+        background-color: #2c2c2c; /* Dark grey */
+        color: #f5f5dc; /* Creme */
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4c4c4c; /* Slightly darker grey */
+        color: #f5f5dc; /* Creme */
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #5c5c5c; /* Even darker grey */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="retro.html">Retro Cafe</a></li>
-                <li><a href="coffeelounge.html">Coffee Lounge</a></li>
-                <li><a href="southedge.html">South Edge</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="retro.html">Retro Cafe</a></li>
+          <li><a href="coffeelounge.html">Coffee Lounge</a></li>
+          <li><a href="southedge.html">South Edge</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h2>Get in Touch</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required maxlength="50">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+      <h2>Get in Touch</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+          maxlength="50"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
-        <p>&copy; 2025 Nust Cafes by Asma & Fatima</p>
+      <p>&copy; 2025 Nust Cafes by Asma & Fatima</p>
     </footer>
-</body>
+  </body>
 </html>
