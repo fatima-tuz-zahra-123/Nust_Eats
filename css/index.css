@@ -32,7 +32,7 @@ body {
   nav ul li {
     margin: 0 10px;
   }
-  nav ul li a {
+  nav ul li a  {
     text-decoration: none;
     padding: 10px 20px;
     border: 2px solid #f5f5dc; /* Creme */
@@ -125,4 +125,30 @@ body {
   }
   a:hover {
     color: #f5f5dc; /* Creme */
+  }
+
+  #extraContent {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #toggleBtn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #f5f5dc; /* Creme */
+    border-radius: 15px;
+    background-color: #3c3c3c; /* Slightly lighter dark grey */
+    color: #f5f5dc; /* Creme */
+  }
+
+  #toggleBtn:hover {
+    background-color: #4c4c4c; /* Slightly darker grey */
+    text-decoration: underline;
+  }
+
+  button:focus {
+    outline: none;
+    box-shadow: none;
   }

@@ -17,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
+
   </head>
 
   <body>
@@ -48,26 +49,32 @@
             coffee, a quick bite between classes, or a sit-down meal with
             friends, you'll find it here.
           </p>
-          Our cafes offer:
-          <ul>
-            <li>
-              A range of beverages from freshly brewed coffee to tea to
-              smoothies and juices
-            </li>
-            <li>
-              A selection of pastries, sandwiches, and snacks in a relaxed and
-              comfortable atmosphere
-            </li>
-            <li>
-              and those who prefer a more substantial meal, our restaurants
-              serve a variety of cuisines, including local favorites and
-              international dishes.
-            </li>
-          </ul>
-          <p>
-            Come and explore the culinary delights of NUST University. We look
-            forward to serving you!
-          </p>
+
+          <button id="toggleBtn" onclick="toggleContent()">Show More</button>
+          <script src="toggleButton.js" defer></script>
+
+          <div id="extraContent">
+            Our cafes offer:
+            <ul>
+              <li>
+                A range of beverages from freshly brewed coffee to tea to
+                smoothies and juices
+              </li>
+              <li>
+                A selection of pastries, sandwiches, and snacks in a relaxed and
+                comfortable atmosphere
+              </li>
+              <li>
+                and those who prefer a more substantial meal, our restaurants
+                serve a variety of cuisines, including local favorites and
+                international dishes.
+              </li>
+            </ul>
+            <p>
+              Come and explore the culinary delights of NUST University. We look
+              forward to serving you!
+            </p>
+        </div>
         </section>
 
         <!-- Multimedia Elements -->
@@ -316,7 +323,10 @@
 
     <footer>
       <p>&copy; 2025 Nust Cafes by Asma & Fatima</p>
+      <span id="timestamp"></span>
+      <script src="footerTime.js" defer></script>
     </footer>
+
   </body>
 </html>
 
