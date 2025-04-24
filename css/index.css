@@ -126,3 +126,34 @@ body {
   a:hover {
     color: #f5f5dc; /* Creme */
   }
+  /* Welcome Banner */
+#welcome-banner {
+    background-color: #f8f1e5;
+    color: #5c3d2e;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    border-bottom: 2px solid #b85c38;
+    font-family: 'Ovo', serif;
+  }
+  
+  #welcome-banner p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #close-banner {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #5c3d2e;
+  }
+  
+  #close-banner:hover {
+    color: #b85c38;
+  }
