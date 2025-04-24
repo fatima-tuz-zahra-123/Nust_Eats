@@ -204,7 +204,7 @@ form {
   .popup-content {
     background-color: #cacaca; /* Light background for the popup content */
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     max-width: 500px;
     width: 90%;
@@ -221,6 +221,7 @@ form {
     max-width: 400px; /* Adjust the size of the GIF */
     height: auto;
     margin-bottom: 20px;
+    border-radius: 20px; /* Add rounded corners */
   }
   
   #close-popup {
