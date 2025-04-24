@@ -238,3 +238,26 @@ form {
   #close-popup:hover {
     background-color: #641d47;
   }
+
+   /* Back to Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 40px; /* Move it slightly to the left */
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px; /* Increase size */
+    font-size: 22px; /* Make the text/icon larger */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }

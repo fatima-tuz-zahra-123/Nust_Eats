@@ -29,28 +29,45 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   
-    // Banner for working hours
+    // Banner for working hours (only if #welcome-banner exists)
     const banner = document.getElementById("welcome-banner");
-    const bannerMessage = banner.querySelector("p");
-  
-    // Get the current system time
-    const now = new Date();
-    const currentHour = now.getHours();
-  
-    // Define working hours (10 AM to 10 PM)
-    const openingHour = 10;
-    const closingHour = 22;
-  
-    // Check if the current time is within working hours
-    if (currentHour >= openingHour && currentHour < closingHour) {
-      bannerMessage.textContent = "Welcome to NUST Eats! Our Cafes are open for you to explore our delicious campus dining options.";
-    } else {
-      bannerMessage.textContent = "Welcome to NUST Eats! Our Cafes are currently closed :( Our working hours are 10 AM - 10 PM, so please check back later.";
+    if (banner) {
+      const bannerMessage = banner.querySelector("p");
+      const now = new Date();
+      const currentHour = now.getHours();
+      const openingHour = 10;
+      const closingHour = 22;
+
+      if (currentHour >= openingHour && currentHour < closingHour) {
+        bannerMessage.textContent = "Welcome to NUST Eats! Our Cafes are open for you to explore our delicious campus dining options.";
+      } else {
+        bannerMessage.textContent = "Welcome to NUST Eats! Our Cafes are currently closed :( Our working hours are 10 AM - 10 PM, so please check back later.";
+      }
+
+      const closeBannerButton = document.getElementById("close-banner");
+      closeBannerButton.addEventListener("click", function () {
+        banner.style.display = "none";
+      });
     }
-  
-    // Close banner functionality
-    const closeBannerButton = document.getElementById("close-banner");
-    closeBannerButton.addEventListener("click", function () {
-      banner.style.display = "none";
-    });
-  });
+
+    // Back to Top Button functionality
+    const backToTopButton = document.getElementById("back-to-top");
+    if (backToTopButton) {
+      // Show the button when the user scrolls down 100px
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      // Scroll to the top when the button is clicked
+      backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    }
+});
