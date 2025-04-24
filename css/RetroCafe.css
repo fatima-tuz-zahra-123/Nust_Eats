@@ -73,7 +73,7 @@ h2 {
 .container {
     display: flex;
     background: white;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 900px;
@@ -187,3 +187,77 @@ form {
         width: 90%;
     }
 }
+
+#custom-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Change background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: #cacaca; /* Light background for the popup content */
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-content p {
+    font-family: 'Ovo', serif;
+    font-size: 22px;
+    margin: 20px 0;
+  }
+  
+  .popup-content .popup-image {
+    max-width: 400px; /* Adjust the size of the GIF */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 20px; /* Add rounded corners */
+  }
+  
+  #close-popup {
+    font-family: 'Ovo', serif;
+    background-color: #003f83;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #close-popup:hover {
+    background-color: #641d47;
+  }
+
+   /* Back to Top Button */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 40px; /* Move it slightly to the left */
+    z-index: 1000;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 20px; /* Increase size */
+    font-size: 22px; /* Make the text/icon larger */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #back-to-top:hover {
+    background-color: #555;
+    transform: scale(1.1);
+  }

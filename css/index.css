@@ -32,7 +32,7 @@ body {
   nav ul li {
     margin: 0 10px;
   }
-  nav ul li a  {
+  nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     border: 2px solid #f5f5dc; /* Creme */
@@ -75,7 +75,7 @@ body {
   .vinyl {
     width: 200px;
     height: 200px;
-    background: url("../images/vinyl.png") no-repeat center center; /*fixed this error*/
+    background: url("..images/vinyl.png") no-repeat center center; /*fixed this error*/
     background-size: cover;
     border-radius: 50%;
     margin: 0 auto;
@@ -152,3 +152,57 @@ body {
     outline: none;
     box-shadow: none;
   }
+  /* Welcome Banner */
+#welcome-banner {
+    background-color: #f8f1e5;
+    color: #5c3d2e;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    border-bottom: 2px solid #b85c38;
+    font-family: 'Ovo', serif;
+  }
+  
+  #welcome-banner p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  #close-banner {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #5c3d2e;
+  }
+  
+  #close-banner:hover {
+    color: #b85c38;
+  }
+
+ /* Back to Top Button */
+#back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px;
+  right: 40px; /* Move it slightly to the left */
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 20px; /* Increase size */
+  font-size: 22px; /* Make the text/icon larger */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}

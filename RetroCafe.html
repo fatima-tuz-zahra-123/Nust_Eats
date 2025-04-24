@@ -1,116 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retro Cafe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ovo&family=Parisienne&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpeg" href="resources/RetroFavicon.jpeg">
-    <link rel="stylesheet" href="css/RetroCafe.css">
-    
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ovo&family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/jpeg" href="resources/RetroFavicon.jpeg" />
+    <link rel="stylesheet" href="css/RetroCafe.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="#location">Location</a>
-            <details>
-                <summary>➕ Expand to see more</summary>
-                <p style="background-color: #333; padding: 10px; line-height: 1.5;">
-                    <a href="SouthEdgeCafe.html">South Edge Cafe</a>
-                <br>
-                    <a href="CoffeeLounge.html">Coffee Lounge</a>
-                </p>
-            </details>
-        </nav>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="#location">Location</a>
+        <details>
+          <summary>➕ Expand to see more</summary>
+          <p style="background-color: #333; padding: 10px; line-height: 1.5">
+            <a href="SouthEdgeCafe.html">South Edge Cafe</a>
+            <br />
+            <a href="CoffeeLounge.html">Coffee Lounge</a>
+          </p>
+        </details>
+      </nav>
     </header>
-    
-        <h1>Retro Cafe</h1>
-        
-            <div class="container">
-                <div class="info">
-                    <h2 style="justify-self: left">Contact</h2>
-                    <p>Phone: 0347 6000250</p>
-                    <h2 style="justify-self: left">Google Rating</h2>
-                    <img src="resources/stars_image.png" alt="4.3 Stars">
-                    <p>Click <a href="https://www.google.com/search?q=retro+cafe&client=safari&sca_esv=fe22a64d7c0cbfa7&rls=en&sxsrf=AHTn8zqxc-oDdsWVwCuXm1QlDfSYf0RnNA%3A1739537870990&ei=zj2vZ7z6O4m69u8Pvs61qQk&ved=0ahUKEwi8mf7Gm8OLAxUJnf0HHT5nLZUQ4dUDCBA&uact=5&oq=retro+cafe&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnJldHJvIGNhZmUyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGPAFGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyGhAuGIAEGJECGNEDGLQCGMcBGIoFGOoC2AEBMhQQABiABBiRAhi0AhiKBRjqAtgBATIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQEyHRAuGIAEGJECGLQCGMcBGMgDGIoFGOoCGK8B2AEBMh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBATIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQFIvBRQygJYxxNwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIBoAINqAIQmAMN8QWlDP_l2QcVkroGBggBEAEYAZIHATGgBwA&sclient=gws-wiz-serp#lrd=0x38df96772f4e12ab:0x652d37bdb7fe4717,1,,,," target="_blank">here</a> to see Google Ratings</p>
-                </div>
-                <div class="image">
-                    <img src="resources/RetroCafe.jpeg" alt="Coffee Lounge Image">
-                </div>
-            </div>
-        
-        
-            <div class="restaurant-list">
-                <div class="restaurant-card">
-                    <a href="resources/RetroMenu.jpg" target="_blank">
-                        <img src="resources/RetroMenu.jpg" alt="Restaurant Image" style="width: 100%">
-                    </a>
-                    <h2>Menu</h2>
-                </div>
-                <div class="restaurant-card">
-                    <form>
-                        <h2>Order</h2>
-                        <label for="item">Item:</label>
-                        <select name="item" id="item" required>
-                            <option value="" hidden >What to Eat?</option>
-                            <option value="Regular Fries">Regular Fries</option>
-                            <option value="Zinger Burger">Zinger Burger</option>
-                            <option value="Fettuccine pasta">Fettuccine pasta</option>
-                            <option value="Chicken Roll Paratha">Chicken Roll Paratha</option>
-                            <option value="Club sandwich">Club sandwich</option>
-                            <option value="Lacha Paratha">Lacha Paratha</option>
-                            <option value="Omlette">Omlette</option>
-                            <option value="Mushroom Omlette">Mushroom Omlette</option>
-                            <option value="Cappuccino">Cappuccino</option>
-                            <option value="Chicken Chilli Dry">Chicken Chilli Dry</option>
-                        </select>
-                        <br>
-                        <label for="quantity">Quantity:</label>
-                        <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
-                        <br>
-                        <label for="mode">Mode of Delivery:</label>
-                        <br>
-                        <label for="mode">Jazz Cash</label>
-                        <input type="radio" name="mode" id="delivery" value="Jazz Cash"> 
-                        <label for="mode">Cash on Delivery</label>
-                        <input type="radio" name="mode" id="delivery" value="Cash on Delivery"> 
-                        <label for="mode">Debit Card</label>
-                        <input type="radio" name="mode" id="delivery" value="Debit Card">
-                        <br>
-                        <label for="contact">Contact Number:</label> 
-                        <br>
-                        <input type="tel" name="contact" id="contact" placeholder="03xx-xxxxxxx" required>
-                        <br>
-                        <input type="submit" value="Order">
-                    </form>
-                </div>
-                
-            </div>
 
-            <section class="restaurant-list" id="location">
-                <div class="restaurant-card">
-                    <canvas id="canvas" width="30" height="30" style="background: linear-gradient(45deg, yellow 10%, red 70%); border-radius: 100%"></canvas>
-                    <h2 style="display: inline">Location</h2>
-                    <br>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.6862291939365!2d72.9880412!3d33.6393768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df96772f4e12ab%3A0x652d37bdb7fe4717!2sRetro%20Cafe!5e0!3m2!1sen!2s!4v1739541831954!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
-    
+    <h1>Retro Cafe</h1>
+
+    <div class="container">
+      <div class="info">
+        <h2 style="justify-self: left">Contact</h2>
+        <p>Phone: 0347 6000250</p>
+        <h2 style="justify-self: left">Google Rating</h2>
+        <img src="resources/stars_image.png" alt="4.3 Stars" />
+        <p>
+          Click
+          <a
+            href="https://www.google.com/search?q=retro+cafe&client=safari&sca_esv=fe22a64d7c0cbfa7&rls=en&sxsrf=AHTn8zqxc-oDdsWVwCuXm1QlDfSYf0RnNA%3A1739537870990&ei=zj2vZ7z6O4m69u8Pvs61qQk&ved=0ahUKEwi8mf7Gm8OLAxUJnf0HHT5nLZUQ4dUDCBA&uact=5&oq=retro+cafe&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnJldHJvIGNhZmUyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyChAjGPAFGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyBxAjGCcY6gIyGhAuGIAEGJECGNEDGLQCGMcBGIoFGOoC2AEBMhQQABiABBiRAhi0AhiKBRjqAtgBATIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQEyHRAuGIAEGJECGLQCGMcBGMgDGIoFGOoCGK8B2AEBMh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBATIdEC4YgAQYkQIYtAIYxwEYyAMYigUY6gIYrwHYAQFIvBRQygJYxxNwAXgAkAEAmAEAoAEAqgEAuAEDyAEA-AEBmAIBoAINqAIQmAMN8QWlDP_l2QcVkroGBggBEAEYAZIHATGgBwA&sclient=gws-wiz-serp#lrd=0x38df96772f4e12ab:0x652d37bdb7fe4717,1,,,,"
+            target="_blank"
+            >here</a
+          >
+          to see Google Ratings
+        </p>
+      </div>
+      <div class="image">
+        <img src="resources/RetroCafe.jpeg" alt="Coffee Lounge Image" />
+      </div>
+    </div>
+
+    <div class="restaurant-list">
+      <div class="restaurant-card">
+        <a href="resources/RetroMenu.jpg" target="_blank">
+          <img
+            src="resources/RetroMenu.jpg"
+            alt="Restaurant Image"
+            style="width: 100%"
+          />
+        </a>
+        <h2>Menu</h2>
+      </div>
+      <div class="restaurant-card">
+        <form>
+          <h2>Order</h2>
+          <label for="item">Item:</label>
+          <select name="item" id="item" required>
+            <option value="" hidden>What to Eat?</option>
+            <option value="Regular Fries">Regular Fries</option>
+            <option value="Zinger Burger">Zinger Burger</option>
+            <option value="Fettuccine pasta">Fettuccine pasta</option>
+            <option value="Chicken Roll Paratha">Chicken Roll Paratha</option>
+            <option value="Club sandwich">Club sandwich</option>
+            <option value="Lacha Paratha">Lacha Paratha</option>
+            <option value="Omlette">Omlette</option>
+            <option value="Mushroom Omlette">Mushroom Omlette</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Chicken Chilli Dry">Chicken Chilli Dry</option>
+          </select>
+          <br />
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            name="quantity"
+            id="quantity"
+            min="1"
+            max="10"
+            value="1"
+          />
+          <br />
+          <label for="mode">Mode of Delivery:</label>
+          <br />
+          <label for="mode">Jazz Cash</label>
+          <input type="radio" name="mode" id="delivery" value="Jazz Cash" />
+          <label for="mode">Cash on Delivery</label>
+          <input
+            type="radio"
+            name="mode"
+            id="delivery"
+            value="Cash on Delivery"
+          />
+          <label for="mode">Debit Card</label>
+          <input type="radio" name="mode" id="delivery" value="Debit Card" />
+          <br />
+          <label for="contact">Contact Number:</label>
+          <br />
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            placeholder="03xx-xxxxxxx"
+            required
+          />
+          <br />
+          <input type="submit" value="Order" />
+        </form>
+      </div>
+    </div>
+
+    <section class="restaurant-list" id="location">
+      <div class="restaurant-card">
+        <canvas
+          id="canvas"
+          width="30"
+          height="30"
+          style="
+            background: linear-gradient(45deg, yellow 10%, red 70%);
+            border-radius: 100%;
+          "
+        ></canvas>
+        <h2 style="display: inline">Location</h2>
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.6862291939365!2d72.9880412!3d33.6393768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df96772f4e12ab%3A0x652d37bdb7fe4717!2sRetro%20Cafe!5e0!3m2!1sen!2s!4v1739541831954!5m2!1sen!2s"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
     <footer>
-        <div class="carousel" >
-            <img src="resources/item1.jpg" alt="Coffee Image 1">
-            <img src="resources/item2.jpg" alt="Coffee Image 2">
-            <img src="resources/item3.jpg" alt="Coffee Image 3">
-            <img src="resources/item4.jpg" alt="Coffee Image 4">
-            <img src="resources/item5.jpg" alt="Coffee Image 5">
-            <img src="resources/item6.jpeg" alt="Coffee Image 6">
-            <img src="resources/item7.jpg" alt="Coffee Image 7">
-            <img src="resources/item8.jpeg" alt="Coffee Image 8">
-            <img src="resources/item9.jpeg" alt="Coffee Image 8">
-            <img src="resources/RetroMenu.jpg" alt="Coffee Image 8">
-        </div>
+      <div class="carousel">
+        <img src="resources/item1.jpg" alt="Coffee Image 1" />
+        <img src="resources/item2.jpg" alt="Coffee Image 2" />
+        <img src="resources/item3.jpg" alt="Coffee Image 3" />
+        <img src="resources/item4.jpg" alt="Coffee Image 4" />
+        <img src="resources/item5.jpg" alt="Coffee Image 5" />
+        <img src="resources/item6.jpeg" alt="Coffee Image 6" />
+        <img src="resources/item7.jpg" alt="Coffee Image 7" />
+        <img src="resources/item8.jpeg" alt="Coffee Image 8" />
+        <img src="resources/item9.jpeg" alt="Coffee Image 8" />
+        <img src="resources/RetroMenu.jpg" alt="Coffee Image 8" />
+      </div>
     </footer>
-</body>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+    
+  </body>
 </html>
